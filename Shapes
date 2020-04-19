@@ -1,0 +1,7 @@
+∆ ▽ O ■ □ ● ○ ▲ ► ▼ ◄ ː ˑ
+const string cClear = "\033[2J\033[1;1H";
+          cout << cClear;
+
+          【
+
+          https://coolsymbol.com/
