@@ -159,8 +159,20 @@ class Scoreboard
              << "】\n"  
              << endl;
 
-
-
+        color = "\x1b[93;1m"; // yellow
+        cout << setw(13) << "\t【"
+                         << color 
+                         << getDown()
+                         << reset
+                         << "】"
+                         << "Down\t\t"
+             << setw(6) << "To Go" 
+                         << "【"
+                         << color
+                         << getToGo() 
+                         << reset
+                         << "】\n" 
+                         << endl;
 
 
 
@@ -302,8 +314,6 @@ void scoreboardControls()
           cout << "\nUpdating new name for Team 2 to..." << tTwoMain.getName() << endl;
           sleep(3); }//pause 3 seconds.
     }
-
-
 
 
         if(decision == 'c' || decision == 'C')
